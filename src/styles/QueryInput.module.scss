@@ -1,0 +1,48 @@
+@use '../styles/utils/colors';
+
+.input_box{
+   margin: 3.5vh auto;
+   max-width: 30rem;
+
+   .form{
+    height: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .input{
+      width: calc(100% - 3.75rem);
+      height: 100%;
+      font-size: 18px;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border: none;
+      outline: none;
+      padding: 1.5rem;
+      font-weight: 500;
+
+    }
+  
+    .submit_btn{
+      width: 3.75rem;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      cursor: pointer;
+      transition: 0.2s background-color ease-in-out;
+
+      &:hover{
+        background-color: lighten(#000, 10%);
+      }
+
+      &:active{
+        transform: scale(0.98);
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+      }
+    }
+  }
+}

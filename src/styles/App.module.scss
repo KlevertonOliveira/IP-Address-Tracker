@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+
+  position: relative;
+}
+
+.query_section{
+  height: 40%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  background: url('../assets/pattern-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+
+  .title{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin-top: 2%;
+  }
+  
+}
+
+.query_geolocation_data_section{
+  background-color: #fff;
+  
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 9999;
+
+  height: fit-content;
+  width: 85%;
+  max-width: 60rem;
+
+  transform: translate(-50%, -40%);
+  
+  border-radius: 15px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), 
+  -2px -2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.map_section{
+  height: 60%;
+  width: 100%;
+  background-color: gray;
+}
+
+@media screen and(min-width: 768px){
+  .query_section{
+    padding: 2vh 0;
+
+    .title{
+      font-size: 2rem;
+    }
+  }
+  .query_geolocation_data_section{
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and(min-height: 992px){
+  .query_section{
+
+    .title{
+      font-size: 2.5rem;
+      padding: 5% 0;
+    }
+  }
+}
