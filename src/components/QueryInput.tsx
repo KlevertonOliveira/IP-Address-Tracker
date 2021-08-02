@@ -49,8 +49,8 @@ const QueryInput = () => {
           >
             <img
               src="/images/icon-arrow.svg"
-              alt=""
-              className='' />   
+              alt="Submit"
+            />   
           </button>
         </form>
       </div>

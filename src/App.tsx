@@ -12,8 +12,12 @@ function App() {
       {/* Query Section */}
       <section className={styles.query_section}>
         <div className={styles.container}>
-          <h1 className={styles.title}>IP Address Tracker</h1>
-          <QueryInput />    
+          <div className={styles.title}>
+            <h1 className={styles.title_text}>IP Address Tracker</h1>
+          </div>
+          <div className={styles.input}>
+            <QueryInput />
+          </div>
         </div>
       </section>
 
