@@ -5,11 +5,10 @@
 
    .form{
     height: 100%;
+    display: flex;
 
     .input{
-      height: 100%;
       width: calc(100% - 4rem);
-      height: 100%;
       font-size: 18px;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
@@ -17,12 +16,10 @@
       outline: none;
       padding: 1.5rem;
       font-weight: 500;
-
     }
   
     .submit_btn{
       width: 4rem;
-      height: 100%;
       background-color: #000;
       color: #fff;
       border: none;
