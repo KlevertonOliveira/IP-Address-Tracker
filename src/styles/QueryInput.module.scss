@@ -1,25 +1,24 @@
 @use '../styles/utils/colors';
 
 .input_box{
-   height: 11.25vh;
 
    .form{
     height: 100%;
     display: flex;
 
     .input{
-      width: calc(100% - 4rem);
+      width: 100%;
       font-size: 18px;
       border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;
       border: none;
       outline: none;
-      padding: 1.5rem;
+      padding: 1rem;
       font-weight: 500;
     }
   
     .submit_btn{
-      width: 4rem;
+      min-width: 3.5rem;
       background-color: #000;
       color: #fff;
       border: none;
@@ -36,20 +35,6 @@
       &:active{
         transform: scale(0.98);
         box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-      }
-    }
-  }
-}
-
-@media screen and(min-width:768px){
-  .input_box{
-    .form{
-      .input{
-        width: calc(100% - 4.5rem);
-      }
-
-      .submit_btn{
-        width: 4.5rem;
       }
     }
   }
